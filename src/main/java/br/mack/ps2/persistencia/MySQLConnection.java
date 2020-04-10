@@ -4,9 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class MySQLConnection {
-    String url = "jdbc:mysql://127.0.0.1:32777/ps2";
+    String url = "dbc:mysql://localhost:3306/projeto?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
     String usuario = "root";
-    String senha = "root";
+    String senha = "";
 
     public Connection getConnection() {
         try {
